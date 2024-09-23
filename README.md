@@ -55,4 +55,154 @@
 
 </body>
 </html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
 
+body{
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url();
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;   
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    color:  #4c8df5;
+    transition: 0.3s all;
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #f54c4c;
+    color: #f54c4c;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.logo :hover{
+    background-color: #f54c4c;
+    color:#fff;
+    transition: 0.5s;
+}
+
+button{
+    color: #f54c4c;
+    background: transparent;
+    border:solid 1px #f54c4c;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 150px 0 0 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img{
+    margin: -3%;
+    width: 500px;
+    height: 470px;
+    border-radius: 55%;
+}
+
+.text h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.text h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.text span{
+    color: #f54c4c; 
+}
+
+.text p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.redes-social{
+    margin-top: 10px;
+}
+
+.redes-social a{
+    color: #f54c4c;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:900px){
+    .cabeçalho-link {
+        display: none;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .container-text{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .container-text img{
+        display: none;
+    }
+}
